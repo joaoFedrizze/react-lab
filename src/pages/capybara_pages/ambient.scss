@@ -1,0 +1,29 @@
+.main-container{
+
+    display: flex;
+
+    .ambient-container{
+
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+
+
+    }
+
+    .ambient-code{
+
+        max-height: 90vh;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+
+        
+
+
+    }
+
+}

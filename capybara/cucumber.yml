@@ -1,0 +1,10 @@
+---
+default: -p bdd -p html -p chrome
+ci: -p dot -p remote_headless
+bdd: --format pretty
+dot: --format progress
+html: --format html --out=log/reports.html
+json: --format json --out=log/report.json
+remote_headless: BROWSER=remote_headless
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
