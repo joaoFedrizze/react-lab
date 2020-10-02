@@ -68,8 +68,7 @@ const CodeBlock = (props) => {
     //[-] Logo da linguage
 
     return(
-
-
+        
         <div className="code-block">
             <h2>{langLogo} {props.title}</h2>
             <div className="code-block-container">

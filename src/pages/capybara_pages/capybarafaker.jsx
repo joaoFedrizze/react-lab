@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
-
+//css
 import './ambient.scss'
 
 //Codeblock
 import {CodeBlock, CodeLine, CodeEmptyLine} from '../../components/code_block/codeblock'
+import HeaderPaginator from '../../components/header_paginator/HeaderPaginator'
 
 class CapybaraFaker extends React.Component {
 
@@ -38,11 +38,15 @@ class CapybaraFaker extends React.Component {
         return(
             <div>
 
-                <Link to="/">&#60;- Voltar a home</Link>
+                <HeaderPaginator
+                preview="/capybaradiferenceofselectors"
+                />
 
                 <div className="main-container">
 
                     <section className="ambient-container">
+
+                        <h1 className="ambiente-title">Capybara Faker</h1>
 
                         <form id="form" onSubmit={this.changeFields}>
                             <input id="field_A" name="fiel_A" type="text" placeholder="field_A"/><br/>
@@ -60,6 +64,8 @@ class CapybaraFaker extends React.Component {
                     </section>
                     
                     <section className="ambient-code">
+
+                        <h1 className="ambiente-title">Arquivos e linhas de código</h1>
 
                         <CodeBlock lines="12" lang="ruby" title="multipleselector.rb">
                             <CodeLine code="class CapybaraFaker < SitePrism::Page" />

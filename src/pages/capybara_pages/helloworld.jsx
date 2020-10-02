@@ -6,24 +6,31 @@ import './ambient.scss'
 
 //Codeblock
 import {CodeBlock, CodeLine, CodeEmptyLine} from '../../components/code_block/codeblock'
+import HeaderPaginator from '../../components/header_paginator/HeaderPaginator'
 
 const CapybaraHelloWorld = () => {
 
         return(
             <div>
 
-                <Link to="/">&#60;- Voltar a home</Link>
+               <HeaderPaginator 
+                next="/capybaramultpleelements"
+               />
 
                 <div className="main-container">
 
                     <section className="ambient-container">
 
+                        <h1 className="ambiente-title">Hello World</h1>
+
                         <p>O teste automatizado @helloWorld é testado na <Link to="/">index</Link> deste projeto, entretanto o seu código está escrito aqui.</p>
-                        <p>Esse teste foi criado com finalidade de encontrar a página 404 do projeto</p>
-                        
+                        <p>Esse teste foi criado com finalidade de encontrar a página <Link to="/404">404</Link> do projeto</p>
+
                     </section>
                     
                     <section className="ambient-code">
+
+                    <h1 className="ambiente-title">Arquivos e linhas de código</h1>
 
                         <CodeBlock lines="5" lang="ruby" title="helloWorld.rb">
                             <CodeLine code="class HelloWorld < SitePrism::Page" />
@@ -60,7 +67,6 @@ const CapybaraHelloWorld = () => {
                     </section>
                 </div>
             </div>
-
 
         )
 

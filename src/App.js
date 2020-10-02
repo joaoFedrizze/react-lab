@@ -10,6 +10,7 @@ import PageNotFound from './pages/404/404'
 import CapybaraFaker from './pages/capybara_pages/capybarafaker'
 import CapybaraMultipleElements from './pages/capybara_pages/capybaramultipleelements';
 import CapybaraHelloWorld from './pages/capybara_pages/helloworld'
+import CapybaraDiferenceOfSelectors from './pages/capybara_pages/capybaradiferenceofselectors'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/capybarafaker" component={CapybaraFaker}/>
         <Route exact path="/capybaramultpleelements" component={CapybaraMultipleElements} />
         <Route exact path="/capybarahelloworld" component={CapybaraHelloWorld} />
+        <Route exact path="/CapybaraDiferenceOfSelectors" component={CapybaraDiferenceOfSelectors} />
         <Redirect to="/404/" />
       </Switch>
     </Router>

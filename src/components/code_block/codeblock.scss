@@ -14,9 +14,27 @@
 
 }
 
+
+/* width */
+.code-block-container::-webkit-scrollbar {
+    width: 20px;
+}
+  
+  /* Track */
+.code-block-container::-webkit-scrollbar-track {
+    background: #ddd;
+}
+  
+  /* Handle */
+.code-block-container::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
 .code-block-container{
 
     display: flex;
+    overflow: hidden;
+    overflow-x: auto;
 
     border-bottom: 2px solid #414141;
     border-top: 2px solid #414141;
@@ -24,9 +42,11 @@
 
     .code-lines ul{
 
+        position: absolute;
+
         margin: 0;
         list-style: none;
-        padding: 0 6px;
+        padding: 10px 6px;
         text-align: right;
 
         background: #414141;
@@ -42,8 +62,8 @@
 
     .code-container{
 
-        margin-left: 10px;
-
+        padding: 10px 20px 10px 40px;
+        
         p {
             white-space: nowrap;
             height: 20px;

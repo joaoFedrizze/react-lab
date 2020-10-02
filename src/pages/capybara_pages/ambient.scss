@@ -1,12 +1,16 @@
 .main-container{
 
     display: flex;
+    justify-content: center;
+
+    max-width: 100%;
 
     .ambient-container{
 
         display: flex;
         flex-direction: column;
 
+        max-width: 600px;
         width: 50%;
 
 
@@ -14,15 +18,18 @@
 
     .ambient-code{
 
-        max-height: 90vh;
-
         display: flex;
         flex-direction: column;
 
+        max-width: 600px;
         width: 50%;
 
-        
+    }
 
+    .ambiente-title{
+
+        padding-left: 10px;
+        border-left: 10px solid #fff;
 
     }
 

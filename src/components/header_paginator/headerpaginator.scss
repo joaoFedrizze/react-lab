@@ -1,0 +1,54 @@
+.paginator-header{
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 16px;
+
+    background: #555;
+
+    .Paginator-header-space{
+
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px;
+        width: 100%;
+        max-width: 1200px;
+
+    }
+
+    .Paginator-header-links-right{
+
+        a{
+            margin-left: 10px;
+        }
+
+    }
+
+    .Paginator-header-links{
+
+        display: flex;
+        padding: 0;
+
+        a{
+            display: block;
+            height: 20px;
+            padding: 10px;
+            background: url('../../assets/img/block.png');
+            background-position: 0 32px;
+            background-repeat: no-repeat;
+
+            transition: 0.3s color, 0.3s background-position;
+
+        }
+
+        a:hover, a:focus{
+
+            background-position: 0 0;
+            color: #fff;
+
+        }
+
+    }
+
+}

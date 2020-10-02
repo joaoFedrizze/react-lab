@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
+//css
 import './ambient.scss'
 
 //Codeblock
 import {CodeBlock, CodeLine, CodeEmptyLine} from '../../components/code_block/codeblock'
+import HeaderPaginator from '../../components/header_paginator/HeaderPaginator'
 
 class CapybaraMultipleElements extends React.Component  {
 
@@ -35,12 +36,17 @@ class CapybaraMultipleElements extends React.Component  {
 
             <div>
                 
-                <Link to="/">&#60;- Voltar a home</Link>
+                <HeaderPaginator
+                preview="/capybarahelloworld"
+                next="/CapybaraDiferenceOfSelectors"
+                />
 
                 <div className="main-container">
 
                     <section className="ambient-container">
                     
+                        <h1 className="ambiente-title">Selecionar seletor expecifico entre multiplo seletores</h1>
+
                         <p>Todos os elementso estão com o mesmo seletor <b>:class 'alpha'</b></p>
 
                         <div>
@@ -57,6 +63,8 @@ class CapybaraMultipleElements extends React.Component  {
                     </section>
 
                     <section className="ambient-code">
+
+                        <h1 className="ambiente-title">Arquivos e linhas de código</h1>
 
                         <CodeBlock lines="5" lang="ruby" title="multipleselector.rb">
                             <CodeLine code="class MultipleSelector < SitePrism::Page" />

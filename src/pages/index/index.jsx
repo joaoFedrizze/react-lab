@@ -22,8 +22,11 @@ const MainPage = () => {
 
                 <ul>
                     <li><Link to="/capybarahelloworld">Hello World</Link></li>
+                    <li><Link to="/capybaramultpleelements">Selecionar seletor expecifico entre seletores repetidos</Link></li>
+                    <li><Link to="/CapybaraDiferenceOfSelectors">Diferença entre os seletores <b>find()</b> e <b>expect()</b></Link></li>
                     <li><Link to="/capybarafaker">Capybara Faker</Link></li>
-                    <li><Link to="/capybaramultpleelements">Selecionar unico multiplo seletor</Link></li>
+                    <li>Upload de imagem</li>
+                    <li>Drag and Drop</li>
                 </ul>
 
             </section>
