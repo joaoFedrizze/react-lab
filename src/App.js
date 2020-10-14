@@ -11,6 +11,9 @@ import CapybaraFaker from './pages/capybara_pages/capybarafaker'
 import CapybaraMultipleElements from './pages/capybara_pages/capybaramultipleelements';
 import CapybaraHelloWorld from './pages/capybara_pages/helloworld'
 import CapybaraDiferenceOfSelectors from './pages/capybara_pages/capybaradiferenceofselectors'
+import Capybaramultipleexpect from './pages/capybara_pages/capybaramultipleexpect'
+import CapybaraPreWrap from './pages/capybara_pages/capybaraprewrap'
+import CapybaraUploadFile from './pages/capybara_pages/capybarauploadfile'
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
         <Route exact path="/capybaramultpleelements" component={CapybaraMultipleElements} />
         <Route exact path="/capybarahelloworld" component={CapybaraHelloWorld} />
         <Route exact path="/CapybaraDiferenceOfSelectors" component={CapybaraDiferenceOfSelectors} />
+        <Route exact path="/capybaramultipleexpect" component={Capybaramultipleexpect} />
+        <Route exact path="/capybaraprewrap" component={CapybaraPreWrap} />
+        <Route exact path="/capybarauploadfile" component={CapybaraUploadFile} />
         <Redirect to="/404/" />
       </Switch>
     </Router>

@@ -61,7 +61,7 @@ const CapybaraHelloWorld = () => {
                             <CodeLine code="end" />
                             <CodeEmptyLine />
                             <CodeLine code="Entao('uma pagina com a mensagem {string} aparecera') do |mensagem|" />
-                            <CodeLine tab="1" code="helloWorld_page.find('h1', text: mensagem)   " />
+                            <CodeLine tab="1" code="expect(helloWorld_page).to have_selector('h1', text: mensagem)" />
                             <CodeLine code="end" />
                         </CodeBlock>
                     </section>

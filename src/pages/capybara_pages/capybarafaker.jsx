@@ -31,7 +31,6 @@ class CapybaraFaker extends React.Component {
 
         textElement.innerHTML = textInject
 
-
     }
 
     render(){
@@ -39,6 +38,7 @@ class CapybaraFaker extends React.Component {
             <div>
 
                 <HeaderPaginator
+                next="/capybaramultipleexpect"
                 preview="/capybaradiferenceofselectors"
                 />
 
@@ -115,9 +115,9 @@ class CapybaraFaker extends React.Component {
                             <CodeLine code="end" />
 
                             <CodeLine code="Entao('verificara se os valores correspondem com os capos inseridos') do" />
-                            <CodeLine tab="1" code="capybarafaker_page.text_content.find('p', text: texto_a)" />
-                            <CodeLine tab="1" code="capybarafaker_page.text_content.find('p', text: texto_b)" />
-                            <CodeLine tab="1" code="capybarafaker_page.text_content.find('p', text: texto_c)" />
+                            <CodeLine tab="1" code="expect(capybarafaker_page).to have_selector('p', text: texto_a)" />
+                            <CodeLine tab="1" code="expect(capybarafaker_page).to have_selector('p', text: texto_b)" />
+                            <CodeLine tab="1" code="expect(capybarafaker_page).to have_selector('p', text: texto_c)" />
                             <CodeLine code="end" />
                         </CodeBlock>
                     </section>

@@ -26,7 +26,12 @@ class CapybaraDiferenceOfSelectors extends React.Component {
 
                         <p className="separator">Elemento p com algum texto simples</p>
 
-                        <p>Conclusão: não ha conclusões</p>
+                        <div className="solution">
+                            <h2>! Solução</h2>
+
+                            <p>Conclusão: Ambos métodos verificam se algo existe na página, entretanto, há uma grande diferença em seus usos, o método “find” é usado quando você quer interagir com um seletor, como um dos exemplos é o comando “find(seletor pros).click” entretanto se você deseja verificar se algo foi carregado é importante você utilizar o comando “expect”, pois esse comando valida se algo foi carregado na página.</p>
+
+                        </div>
                         
                     </section>
                     

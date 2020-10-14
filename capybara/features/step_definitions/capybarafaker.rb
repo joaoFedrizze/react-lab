@@ -19,9 +19,9 @@ Entao('ele realizara um submit') do
 end
 
 Entao('verificara se os valores correspondem com os capos inseridos') do
-    capybarafaker_page.text_content.find('p', text: texto_a)   
-    capybarafaker_page.text_content.find('p', text: texto_b)   
-    capybarafaker_page.text_content.find('p', text: texto_c)   
+    expect(capybarafaker_page).to have_selector('p', text: texto_a)
+    expect(capybarafaker_page).to have_selector('p', text: texto_b)
+    expect(capybarafaker_page).to have_selector('p', text: texto_c)
 
     log("Os campos resultados foram [#{texto_a}, #{texto_b}, #{texto_c}]")
 end

@@ -91,13 +91,13 @@ class CapybaraMultipleElements extends React.Component  {
                             <CodeLine tab="1" code={`multipleselector_page.visit("/capybaramultpleelements")`} />
                             <CodeEmptyLine />
                             <CodeLine tab="1" code="multipleselector_page.find_all('.alpha')[0].click" />
-                            <CodeLine tab="1" code="multipleselector_page.text_field(text: 'O valor é 1')" />
+                            <CodeLine tab="1" code="expect(multipleselector_page).to have_selector('p', text: 'O valor é 1')" />
                             <CodeEmptyLine />
                             <CodeLine tab="1" code="multipleselector_page.find_all('.alpha')[1].click" />
-                            <CodeLine tab="1" code="multipleselector_page.text_field(text: 'O valor é 2')" />
+                            <CodeLine tab="1" code="expect(multipleselector_page).to have_selector('p', text: 'O valor é 2')" />
                             <CodeEmptyLine />
                             <CodeLine tab="1" code="multipleselector_page.find_all('.alpha')[2].click" />
-                            <CodeLine tab="1" code="multipleselector_page.text_field(text: 'O valor é 3')" />
+                            <CodeLine tab="1" code="expect(multipleselector_page).to have_selector('p', text: 'O valor é 3')" />
                             <CodeEmptyLine />
                             <CodeLine code="end" />
                         </CodeBlock>

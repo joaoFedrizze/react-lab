@@ -25,7 +25,9 @@ const MainPage = () => {
                     <li><Link to="/capybaramultpleelements">Selecionar seletor expecifico entre seletores repetidos</Link></li>
                     <li><Link to="/CapybaraDiferenceOfSelectors">Diferença entre os seletores <b>find()</b> e <b>expect()</b></Link></li>
                     <li><Link to="/capybarafaker">Capybara Faker</Link></li>
-                    <li>Upload de imagem</li>
+                    <li><Link to="/capybaramultipleexpect">Multiple expect elements</Link></li>
+                    <li><Link to="/capybaraprewrap">Procurar texto com quebras de linha</Link></li>
+                    <li><Link to="/capybarauploadfile">Upload de arquivos</Link></li>
                     <li>Drag and Drop</li>
                 </ul>
 
