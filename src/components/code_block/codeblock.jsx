@@ -6,6 +6,7 @@ import './codeblock.scss'
 //Images
 import RubyImage from '../../assets/img/ruby.png'
 import CucumberImage from '../../assets/img/cucumber.png'
+import HTML5Image from '../../assets/img/html5.png'
 
 const CodeLine = (props) => {
 
@@ -63,6 +64,10 @@ const CodeBlock = (props) => {
     }else if(props.lang === 'cucumber'){
 
         langLogo.push(<img src={CucumberImage} alt="ruby logo"/>)
+
+    }else if(props.lang === 'html5'){
+
+        langLogo.push(<img src={HTML5Image} alt="html5 logo"/>)
 
     }
     //[-] Logo da linguage

@@ -37,6 +37,15 @@ dentro de elemento P`
 
                     <h1 className="ambiente-title">Arquivos e linhas de código</h1>
 
+                        <CodeBlock lines="5" lang="html5" title="Carregado na página" >
+                            <CodeLine code={`<p style="white-space: pre-wrap;">`} />
+                            <CodeLine code="Algum" />
+                            <CodeLine code="texto" />
+                            <CodeLine code="dentro de elemento P" />
+                            <CodeLine code={`</p>`} />
+                        </CodeBlock>
+                        <p>Esse arquivo ele foi escrito em formato jsx, entretanto quando o react realiza a build a forma de interpretação de código fica igual a escrita acima</p>
+
                         <CodeBlock lines="5" lang="ruby" title="textwrap.rb">
                             <CodeLine code="class TextWrap < SitePrism::Page" />
                             <CodeEmptyLine/>
@@ -66,6 +75,7 @@ dentro de elemento P`
                             <CodeEmptyLine />
                             <CodeLine code="end" />
                         </CodeBlock>
+
                     </section>
                 </div>
             </div>
